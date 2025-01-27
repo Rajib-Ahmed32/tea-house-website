@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="name" content="Rajib Ahmed" />
+    <meta
+      name="description"
+      content="Discover the essence of tranquility and flavor at this tea house. Explore our wide selection of premium teas, from classic blends to exotic brews, along with artisanal teaware and a cozy ambiance. Perfect for tea lovers seeking relaxation and unforgettable experiences."
+    />
+    <meta
+      name="keywords"
+      content="Tea house, premium tea, artisanal teaware, exotic teas, cozy tea cafe, tea shop, tea blends, tea lovers, herbal teas, loose leaf tea, organic tea, tea for relaxation, tea culture, tea tasting experience, tranquil ambiance."
+    />
+    <title>Tea House Website</title>
+    <link rel="icon" type="image/x-icon" href="./images/bg_cup.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style-1.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      module.exports = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "custom-gradient":
+                "linear-gradient(270deg, rgb(255, 0, 0) 0%, rgb(255, 137, 56) 100%)",
+            },
+            fontFamily: {
+              "manrope": ["Manrope", "sans-serif"],
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+  </head>
+  <body >
+    <main class="font-manrope">
+      <section class="bg-[#f4c47a] mb-7">
+        <div class="w-[85%] mx-auto">
+          <header class="flex py-8 justify-between items-center">
+            <div class="flex gap-x-1 items-center w-fit">
+              <img src="./images/banner.png" class="w-[70px]" alt="Tea House" />
+              <h2 class="text-xl text-[#f0b72c]">Tea House</h2>
+            </div>
+
+            <nav class="hidden lg:block">
+              <ul class="flex gap-x-8 text-lg text-[#3C3C3C] font-semibold">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+              </ul>
+            </nav>
+
+            <img
+              src="./icons/hamburger.png"
+              alt="Hamburger Menu"
+              class="lg:hidden block max-w-full h-auto"
+            />
+          </header>
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-x-4"
+          >
+            <div class="space-y-4 mb-6">
+              <h1
+                class="text-[#1C1C1C] text-[3.5rem] leading-[5rem] lg:text-[4.5rem] leading-[5rem]"
+              >
+                It's good<br />
+                tea time at The<br />
+                Tea House
+              </h1>
+              <p class="text-lg text-[#777777]">
+                Tea and Botanical Solutions Supplier Give Optimum Satisfaction
+                To Your Taste Buds.
+              </p>
+              <button
+                class="text-[clamp(0.8rem, 8vw, 1rem] px-6 py-3 text-white font-bold flex items-center rounded-lg bg-gradient-to-l from-red-500 to-orange-400"
+              >
+                Explore More
+                <img class="w-[1rem] ml-1" src="./icons/arrow.png" />
+              </button>
+            </div>
+
+            <div class="">
+              <img
+                src="./images/banner.png"
+                alt="main-image"
+                class="max-w-full h-auto min-w-[300px]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
